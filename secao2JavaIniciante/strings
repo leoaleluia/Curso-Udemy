@@ -1,0 +1,2 @@
+let texto = "olá mundo"
+console.log(texto.replace(/o/g, '#'))
