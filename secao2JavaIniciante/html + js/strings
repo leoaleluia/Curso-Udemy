@@ -1,0 +1,3 @@
+let texto = "olá mundo"
+console.log(texto.replace(/o/g, '#')) //Comando para substituir todos os 'o' da string, lembrando que uma string é um objeto:
+
