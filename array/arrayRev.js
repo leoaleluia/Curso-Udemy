@@ -1,6 +1,7 @@
 const nomes = ['leo', 'davi', 'aline']
 nomes[0] = 'leonardo'
 console.log(nomes)
+nomes.
 
 nomes.push('leo') //adciona ao final
 console.log(nomes)
