@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <section class="container">
+        <h1>Calcule seu imc</h1>
+        <form id="form">
+            <label for="peso">Peso</label>
+            <input type="text" name="peso" id="peso">
+            <label for="altura">altura</label>
+            <input type="text" name="altura" id="altura">
+            <button type="submit">testar</button>
+            <p id="tst"></p>
+        </form>
+
+        <script>
+            const form = document.querySelector('#form')
+            const  peso = document.querySelector('#peso')
+            const altura = document.querySelector('#altura')
+
+            altura = altura.value
+            peso = peso.value
+            const tst = document.querySelector('#tst')
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                
+                if(peso > altura){
+                    tst.innerHTML = `ok`
+                }
+            })
+        </script>
+    </section>
+
+</body>
+</html>
