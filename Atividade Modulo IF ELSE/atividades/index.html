@@ -19,21 +19,34 @@
             <p id="tst"></p>
         </form>
 
-        <script>
-            const form = document.querySelector('#form')
+        <script src="js/main.js">
+
+           /*const form = document.querySelector('#form')
             const  peso = document.querySelector('#peso')
             const altura = document.querySelector('#altura')
 
-            altura = altura.value
-            peso = peso.value
+            
             const tst = document.querySelector('#tst')
             form.addEventListener('submit', function(e){
                 e.preventDefault();
-                
-                if(peso > altura){
-                    tst.innerHTML = `ok`
+                const altura1 = altura.value
+                const peso1 = peso.value
+                const imc = peso1 / (altura1 * altura1)
+
+                if (imc < 18.5){
+                    tst.innerHTML = `Seu imc é de ${imc} e vocÊ está abaixo do peso`
+                }else if(imc >= 18.5 && imc <= 24.9){
+                    tst.innerHTML = `Você está n peso ideal imc = ${imc}`
+                }else if(imc >= 25 && imc <= 29.9){
+                    tst.innerHTML = `VocÊ está com sobrepeso imc = ${imc}`
+                }else if(imc >= 30  && imc <= 34.9 ){
+                    tst.innerHTML = `Você está com obesidade GRAU 1 imc = ${imc}`
+                }else if(imc >= 35 && imc <= 39.9){
+                    tst.innerHTML = `Você está com obesidade grau 2 imc = ${imc}`
+                }else{
+                    tst.innerHTML = `Você está com obesidade grau 3 imc = ${imc}`
                 }
-            })
+            })*/
         </script>
     </section>
 

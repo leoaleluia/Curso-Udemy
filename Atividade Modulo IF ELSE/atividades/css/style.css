@@ -46,3 +46,8 @@ form button{
     height: 50px;
     cursor: pointer;
 }
+
+.paragrafo-resultado{
+    background: #992121;
+    padding: 10px 20px  ;
+}
