@@ -10,6 +10,28 @@
     <h1 style="background-color: red;">teste 2</h1>
     <p>Lorem <b>ipsum<b> <strong>dolor sit</strong>, <a href="">Tag para links</a>amet <delconsectetur ></del> <ins>adipisicing elit</ins>. <s>Eaque </s>nesciunt 2<sup>2</sup> h 2<sub>2</sub>oaccusamus odit qui voluptatem maxime ipsam a nulla, magnam natus tenetur nobis consectetur esse officiis, eveniet laudantium! Culpa, illo veritatis.</p>  
         
-    <blockquote>Aqui é um bloco</blockquote>
+    <blockquote>Aqui é um bloco de citação
+        <p>eu posso ter paragrafos nos bloockquote, mas não posso ter um bloockquote no paragrafo</p>
+        <hr>
+        <p>usando uma linha hrr acima para separa os textos, </p>
+        <hr>
+        <pre>
+            <code>
+                function somar(a, b){
+                    if (typeof a !== 'number' || typeof b !== 'number'){
+                        throw new ReferenceError("As entradas precisam ser números")
+                    }
+                    return a + b
+                } 
+
+                try{
+                    console.log(somar('2', 3))
+                }catch(error){
+                    //console.log(erro.message) 
+                    console.log("erro teste")
+                }
+            </code>
+        </pre>
+    </blockquote>
 </body>
 </html>
