@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: black;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            display: block;
+        }
+        nav a{
+            color: white;
+            text-decoration: none; /*Tira o sublinhado*/
+            
+        }
+        nav a:hover{
+            background:red /*ao passar o mouse, o item da nav ficará vermelho*/
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><abbr title="Home"><a href="#">Home</a></abbr></li>
+            <li><abbr title="about"><a href="#">About</a></abbr></li>
+            <li><abbr title="Products"><a href="#">Products</a></abbr></li>
+        </ul>
+    </nav>
+    <ul> <!--   Listas não ordenada-->
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    
+    <ol type="1" start="1"> <!--   Listas ordenadas-->
+        <li>3</li>
+        <li>1</li>
+        <li>2</li>
+    </ol>
+
+    <dl> <!--Descrição dos itens da lista-->
+        <dt>cafe</dt>
+        <dd>Bebida quente</dd>
+    </dl>
+</body>
+</html>
