@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios e Inputs  </title>
+    <style>
+        label{
+            cursor: pointer;
+            display: block; /*é possivel quebrar as linhas das tags quando o cursor é um bloco*/
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank"> <!--Todo form precisa de uma action, pois ela vai enviar o formulario preenchido para o caminho determinado-->
+
+        <fieldset> <!--Serve para agrupar os campos de um formulários relacionados-->
+            <legend>Preencha com seus dados</legend>
+           
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </p>
+
+            <p>
+                <label for="nome">Sou um dev?</label>
+                <input type="checkbox" id="dev">
+            </p>
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button> <!--Esses dois buttons estão dentro desse formulário, por isso eles envial o que está dentro da tag "form"-->
+            </p>
+
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>

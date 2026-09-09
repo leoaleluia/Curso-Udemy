@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        thead td, thead th{
+            border: 1px solid #ccc;
+            padding: 10px; /* Para inflar internamente o campo de digitação*/
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            
+        }
+        table th{
+            background: #ddd;
+            text-decoration: none;
+        }
+        table th:hover{
+            background: red;
+        }
+        tbody tr, tbody td{
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        table caption{
+            caption-side: top;
+            font: 20px;
+            margin-bottom: 10px; /*Para afastar o Nome da table da linha dela*/
+        }
+
+        .responsive-table{
+            
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <div class="responsive-table">
+    <table>
+        <caption> Primeira tabela</caption>
+        <thead>
+            <tr> <!--Para linhas-->
+                <th> <!--Para Colunas--> <abbr title="Dados da primeira coluna">Titulo 1</abbr>
+                </th>
+                <th>Titulo 2</th>
+                <th> Titulo 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--Para as linhas-->
+                <td> <!--pARA CADA IREM D COLUNA--> item coluna</td>
+                <td>Item coluna 2</td>
+                <td>Item coluna 3</td>
+            </tr>
+            <tr> <!--Para as linhas-->
+                <td colspan="2" rowspan="2"> <!--pARA CADA IREM D COLUNA--> item coluna</td>
+                <td>Item coluna 3</td>
+            </tr>
+            <tr> <!--Para as linhas-->
+                
+                <td>Item coluna 3</td>
+            </tr>
+            <tr> <!--Para as linhas-->
+                <td> <!--pARA CADA IREM D COLUNA--> item coluna</td>
+                <td>Item coluna 2</td>
+                <td>Item coluna 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+</body>
+</html>
