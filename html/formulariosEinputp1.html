@@ -24,13 +24,24 @@
 
             <p>
                 <label for="nome">Sou um dev?</label>
-                <input type="checkbox" id="dev">
+                <input type="checkbox" id="dev" value="sim">
+            </p>
+            <p>
+                <label for="date"></label>
+                <input type="date" id="date" name="date">
             </p>
             <p>
                 <button type="reset">Reset</button>
                 <button type="submit">Enviar</button> <!--Esses dois buttons estão dentro desse formulário, por isso eles envial o que está dentro da tag "form"-->
             </p>
-
+            <p>
+                <label for="file">Sua foto</label>
+                <input type="file" id="file" name="file"  multiple > <!--multiple serve para selecionar mais de um arquivo-->
+            </p>
+            <p>
+                <label for="number">Number</label>
+                <input type="numer" name="number" id="number" min="10" max="50">
+            </p>
         </fieldset>
     </form>
     
