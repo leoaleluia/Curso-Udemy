@@ -31,16 +31,52 @@
                 <input type="date" id="date" name="date">
             </p>
             <p>
-                <button type="reset">Reset</button>
-                <button type="submit">Enviar</button> <!--Esses dois buttons estão dentro desse formulário, por isso eles envial o que está dentro da tag "form"-->
-            </p>
-            <p>
                 <label for="file">Sua foto</label>
                 <input type="file" id="file" name="file"  multiple > <!--multiple serve para selecionar mais de um arquivo-->
             </p>
             <p>
                 <label for="number">Number</label>
                 <input type="numer" name="number" id="number" min="10" max="50">
+            </p>
+            <p>
+                <label for="password">Number</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </p>
+            <p>
+                <label for="email">Seu e-mail:</label>
+                <input type="numer" name="email" id="email" placeholder="ex: email@email.com">
+            </p>
+            
+             <p>
+                <label for="url">url</label>
+                <input type="url" name="url" id="url" placeholder="URL">
+            </p>
+
+            <p>
+                <label for="select">selecione uma opção</label>
+                <select name="select" id="select">
+                    <optgroup label="Teste">
+                    <option value="qualquer 1" label="label 1"> </option>
+                    <option value="qualquer 2" label="label 2"> </option>
+                    <option value="qualquer 3" label="label 3"> </option>
+                    <option value="qualquer 4" label="label 4"> </option>
+                    </optgroup>
+
+                    <option value="qualquer 1" label="label 1"> </option>
+                    <option value="qualquer 2" label="label 2"> </option>
+                    <option value="qualquer 3" label="label 3"> </option>
+                    <option value="qualquer 4" label="label 4"> </option>
+
+                </select>
+            </p>
+            <p>
+                <label for="textarea">textarea</label>
+                <textarea name="textarea" id="textarea" rows="8" cols=""></textarea>
+            </p>
+
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button> <!--Esses dois buttons estão dentro desse formulário, por isso eles envial o que está dentro da tag "form"-->
             </p>
         </fieldset>
     </form>
