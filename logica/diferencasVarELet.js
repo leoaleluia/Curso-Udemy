@@ -44,8 +44,7 @@ console.log(nome)
 const {numer: num}  = pessoa // Pega a chave num de pessoa e atribui a variável
 
 const {
-    endereco: {numero: n = 32, logadouro},
-    endereco, //Pega os vaores de numero e logadouro e adciona a variável endereço, o "numero" se chamara n 
+    endereco: {numero: n = 32, logadouro} //Pega os vaores de numero e logadouro e adciona a variável endereço, o "numero" se chamara n 
     // por cont da sintaxe
 } = pessoa;
 console.log(n, logadouro)
@@ -53,7 +52,7 @@ console.log(r)
 
 
 
-const { //Atribuiu um novo valor a N
+const num2 =  { //Atribuiu um novo valor a N
     endereco: {numero: novoN},
     endereco
 }
