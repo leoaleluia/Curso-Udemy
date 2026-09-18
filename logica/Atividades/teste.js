@@ -1,19 +1,12 @@
-const readline = require('readline').createInterface({
+const readline = require("readline/promises");
+
+const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-let peso
-let idade
-readline.question('Qual o seu peso em kg? ', (resposta) => {
-    idade = resposta
-    readline.close
-});
+let nome = await rl.question("Digite seu nome: ");
+let idade = await rl.question("seu idade")
+console.log(`${nome} ${idade}`);
 
-readline.question('Qual o seu peso em kg? ', (resposta) => {
-    peso = resposta
-    readline.close
-});
-
-console.log(`peso:  ${peso} ${peso}`)
-
+rl.close();

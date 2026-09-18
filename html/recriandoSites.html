@@ -27,22 +27,32 @@
     }
 
     #heading div{
-        width: 80%;  /*Ou seja, a div feita tem 80% da tela do pc-->*/
-        display: flex;
-        margin: 0 auto;
-        
-        justify-content: 
-        
-        space-between;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+    /* COMANDO CHAVE: Alinha todos os itens verticalmente ao centro */
+    align-items: center; /*serve para espaçar as opções de login*/
     }
-     #heading .h1{
+     #heading .h2{
+        position: relative;
         padding: 15px;
         font-size: 20px;
+        margin-right: 500px;
     }
     body{
         background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a00fdfd7-4916-4f12-b5ff-c05b9d7b4d07/web/BR-pt-20260824-TRIFECTA-perspective_920e6633-b2e0-4ce1-ac06-f90b598f880a_large.jpg);
         
         background-size: cover;
+    }
+    #heading select{
+        position: relative;
+        margin-top: -25px; /* Sobe o elemento individualmente caso precise de ajuste fino */
+        padding: 5px 10px;
+        margin-top: 20px;
+        right: 20px;
+
     }
     
     </style>
@@ -50,13 +60,20 @@
 <body>
     <header id="heading">
         <div>
-        <h1 class="h1">
+        
+        <select class="meu-select" name="" id=""> opções
+            <option value="" label="teste 1 "> 1 </option>
+            <option value=""> 1 </option>
+            <option value=""> 1 </option>
+        </select> 
+        <h1 class="h2">
             <a href="#">Netflix</a>
         </h1>
 
         <h2 class="h1">
             <a href="#">Entrar</a>
-        </h2>     
+        </h2> 
+        
         </div>
         
 

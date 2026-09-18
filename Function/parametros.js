@@ -25,22 +25,21 @@ function nome({nome, sobrenome, idade}){
 let obj = ({nome: 'leonardo', sobrenome: 'aleluia', idade: 28})
 nome(obj) 
 //ou
-nome({nome:'leo', sobrenome='aleluia', idade: 28})
+nome({nome:'leo', sobrenome:'aleluia', idade: 28})
 
 //Usando o restOperetion
 
 function teste3(operador, acumulador, ...numeros){
     
-    for(let i of numeros){
+    for(let numero of numeros){
         if (operador === '+') acumulador += numero
          if (operador === '-') acumulador -= numero
          if(operador ==='/') acumulador /= numero
          if(operador === '*') acumulador *= numero
         i += i
-        acumulador++
     }
 
-    console.log(i)
+    console.log(acumulador)
 }
 
 teste3()
