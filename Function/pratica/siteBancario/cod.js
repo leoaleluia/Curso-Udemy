@@ -8,7 +8,7 @@ function ContaBancaria(titular, saldoInicial){
         return `${this.titular}`
     }
 
-    this.depositar = function(valor){
+    this.depositar = valor => {
 
         if(valor > 0){
             valor = Number(valor)
@@ -16,7 +16,7 @@ function ContaBancaria(titular, saldoInicial){
             return `novo saldo de ${this.saldoInicial}`
         }
     }
-    this.saque = function(valor){
+    this.saque = valor => {
         valor = Number(valor)
         if(this.saldoInicial > valor){
             this.saldoInicial -= valor
@@ -28,9 +28,31 @@ function ContaBancaria(titular, saldoInicial){
 
 function enviar(){
     let inputTitular = document.getElementById('titular').value
-    const saldo =  document.querySelector('.saldo')
+    let saldo =  document.getElementById('saldoIni').value
+    let saque = document.getElementById('saque').value
+    let depoosito = document.getElementById('deposito').value
     let nome = document.getElementById('nomee')
 
-    let minhaConta =  new ContaBancaria(inputTitular, 10)
+    
+    let minhaConta =  new ContaBancaria(inputTitular, saldo)
     nome.innerHTML =  minhaConta.descrever()
+
+     if(saldo){
+        saldo.innerHTML = minhaConta.saldoInicial
+    }
+
+    if(saque) {
+
+        let saqueF = () =>{
+            saldoSaque = Number(saque)
+            minhaConta.saldoInicial -= saldoSaque
+        }
+    }
+
+    if(depoosito){
+        let dep = () =>{
+            saldoDep = Number(depoosito)
+            minhaConta.saldoInicial += saldoDep
+        }
+    }
 }
