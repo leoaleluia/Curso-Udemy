@@ -1,0 +1,24 @@
+*{
+    /*Seleciona todos as tagas aqui escritas*/
+    border: 1pix solid red; /*todas as bordas serão red*/
+    margin:  0;
+    padding: 0;
+
+}
+
+h1 p{
+    color: purple;
+}
+
+section div p{
+    color: red;
+}
+
+/*Selecionando por classe */
+.heading{
+    color:blue;
+}
+
+div.main-contet p.red{
+    color: green
+}
