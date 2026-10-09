@@ -6,19 +6,26 @@
 
 }
 
-h1 p{
+h1 {
     color: purple;
 }
 
-section div p{
+section div p.blue{ 
     color: red;
 }
 
 /*Selecionando por classe */
-.heading{
-    color:blue;
+
+div.main-contet p.red{ /*Na DIV que contem a classe MAIN-CONTENT, procure a tag P que tenha a classe RED*/
+    color: green
+    
+}
+div.main-contet p.blue{
+    color: red;
+    font-size: 20px;        
 }
 
-div.main-contet p.red{
-    color: green
+#teste{ /*Podemos selecionar o id direto da tag usando a hashtag*/
+    color: blueviolet;
+    font-size: 30px;
 }

@@ -1,16 +1,26 @@
-.{
+*{
     margin: 0;
     padding: 0;
 }
 
-.pai h1+p{ /*Todo paragrafo que vier logo após um h1*/
+.pai h1+p{ /*Todo paragrafo que vier logo após um h1, pois são irmãos, ele só pega o primeiro p*/
     color: red;
 }
 
-.pai p+h1{
+.pai p+h1{ /*todo h1 após o P*/
     color: blue;
 }
 
 .pai h1~p{ /*todos os p do texto será amarelo*/
     color: yellow;
+}
+.pai div.antes+div.um{ /*Na classe pai, vá na div classe ANTES e a primeira tag com a classe UM que estiver depois dela pinte de red*/
+    color: red;
+}
+.pai div.um+div.dois{/*Na classe pai, procure a TAG DIV classe UM e a priemira tag da classe DOIS será blue*/
+    color: blue;
+}
+
+.pai .umm~.dois2{ /*Selelciona todas as tags DOIS que vem depois do seu irmão de TAG UM*/
+    color: red;
 }
