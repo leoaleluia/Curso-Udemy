@@ -33,4 +33,4 @@ carros.push(new Estoque("uno2", 2011, 1355))
 carros.push(new Estoque("uno3", 2013, 1355))
 carros.push(new Estoque("uno4", 2014, 1455))
 
-console.log(carros.filter(carros => carros.ano === 2010 && carros.placa === 1855))
+console.log(carros.filter(carross => carross.ano === 2010 && carross.placa === 1855))
