@@ -6,7 +6,7 @@ const lista2 = lista.map(function(valor, indice){
 
 const listaArrowFunction = lista.map(valor => valor * 2);
 
-
+console.log(listaArrowFunction)
 const pessoas2 = [
     {nome: 'luiz', idade: 30},
     {nome: 'luiz2', idade: 30},

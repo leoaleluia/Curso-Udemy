@@ -14,8 +14,10 @@ const subtrair = (num) =>{
     return num - 2
 }
 
-const subtrair2 = nomero => numero - 2 // sintaxe simplificado com retorno implicto (arrow function)
+const subtrair2 = numero => numero - 2 // sintaxe simplificado com retorno implicto (arrow function)
 
+let usandoSb2 = subtrair2(5);
+console.log(usandoSb2)
 // Como metodo de um objeto
 
 const calculadora = {

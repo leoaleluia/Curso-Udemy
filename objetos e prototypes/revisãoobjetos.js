@@ -9,7 +9,7 @@ pessoa1.getDataNascimento = function () {
     const dataAtual = new Date()
     return dataAtual.getFullYear()- this.idade
 }
-
+    
 
 for(let chave in pessoa1){
     console.log(chave)
