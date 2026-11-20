@@ -10,7 +10,7 @@ function Produto(nome, preco, estoque, cod){
         this.cod = 0
     }
 
-    Object.defineProperty(this, 'estoque', {
+    Object.defineProperty(this, 'estoque', { //"pode ser qualquer objeto, colocamos estoque para melhor didática"
         enumerable: true, //mostra a chave em um indice
         value: estoque,
         writable: false, //valor não pode ser alterado
@@ -32,6 +32,8 @@ function Produto(nome, preco, estoque, cod){
         }
     })
 }
+
+Pessoa.prototype.estouAqui = "aaaaaa"
 
 const p1 = new Produto("p1", 30, 10);
 p1.estoque = 12
