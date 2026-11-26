@@ -46,4 +46,6 @@ function Produto(nome, preco, estoqueee, cod){
 
 const p1 = new Produto("caixa", 10, 10)
 
+p1.estoquee = 25
+
 console.log(p1.estoquee)
